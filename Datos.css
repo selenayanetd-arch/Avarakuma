@@ -1,0 +1,36 @@
+ article{
+     background-color: #0b132b;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 2rem;
+     color: #ffffff;
+ }
+
+
+ article {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 1.5rem;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ article>div {
+     background: linear-gradient(135deg, #1c2541 0%, #0b2545 100%);
+     border: 2px solid #134074;
+     border-radius: 12px;
+     padding: 1.5rem;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+ }
+
+
+ article>div p {
+     margin: 0;
+     line-height: 1.6;
+     color: #e0f4fc;
+     font-size: 1rem;
+ }

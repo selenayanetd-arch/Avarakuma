@@ -1,0 +1,264 @@
+:root {
+  --bg-principal: #0b132b;
+  --bg-card: #1c2541;
+  --bg-card-hover: #233156;
+  --azul-profundo: #0077b6;
+  --celeste-brillante: #00b4d8;
+  --celeste-claro: #90e0ef;
+  --celeste-pastel: #caf0f8;
+  --texto-blanco: #ffffff;
+  --texto-secundario: #c0d6df;
+  --sombra-celeste: rgba(0, 180, 216, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-principal);
+  color: var(--texto-blanco);
+  line-height: 1.6;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(11, 19, 43, 0.95);
+  border-bottom: 2px solid var(--azul-profundo);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--celeste-pastel);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--celeste-brillante);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--azul-profundo);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--texto-blanco);
+  padding: 0.3rem;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  color: var(--celeste-pastel);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(144, 224, 239, 0.3);
+}
+
+.main-content p {
+  color: var(--texto-secundario);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+main {
+  width: 86vw;
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  gap: 10px;
+}
+.recetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-receta {
+  background-color: #4830be;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-receta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: #0e0043;
+}
+
+.descripcion-pierrot {
+    font-size: 0.95rem;
+  color: #10003a;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+
+}
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #060b18;
+  border-top: 1px solid var(--azul-profundo);
+  color: var(--texto-secundario);
+  margin-top: 3rem;
+}
+
+.footer {
+  background-color: #3c36aa;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+.Texto {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #071527 0%, #0d2847 50%, #030a14 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.Texto p {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  background: rgba(14, 165, 233, 0.08);
+  border-left: 4px solid #38bdf8;
+  border-radius: 0 12px 12px 0;
+  color: #e0f2fe;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.Texto p:hover {
+  transform: translateX(6px);
+  background: rgba(14, 165, 233, 0.16);
+  border-left-color: #7dd3fc;
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+}

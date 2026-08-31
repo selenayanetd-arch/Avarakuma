@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avarakuma</title>
+  <link rel="stylesheet" href="Proyecto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Historia.html">
+  <link rel="stylesheet" href="Datos.html">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">
+        <img src="LOGO.webp" alt="Logo del sitio" class="logo-img">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Historia.html">Historia</a></li>
+        <li><a href="Datos.html">Datos</a></li>
+        <li><a href="Personajes.html">Personajes</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Buscar..." aria-label="Buscar">
+      <button type="button">🔍</button>
+    </div>
+  </header>
+  <main class="recetas-grid">
+    <article class="card-receta" onclick="seleccionarTarjeta(this)">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/CpXJHWSXJW0?si=XFEaVZx2WxG4q5up&amp;start=6"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-content">
+        <h3>Avatar</h3>
+        <p class="descripcion-pierrot">
+          Avatar (2009): Un exmarine en un cuerpo alienígena lidera a los Na'vi para salvar el planeta Pandora de los
+          humanos
+        </p>
+        <div class="card-footer-decor"></div>
+      </div>
+    </article>
+
+    <article class="card-receta" onclick="seleccionarTarjeta(this)">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/u0hxjdWG84k?si=n2aLdnrf2VQvRwaA&amp;start=1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-content">
+        <h3>Avatar 2 El camino del Agua</h3>
+        <p class="descripcion-pierrot">
+
+          Avatar: El camino del agua (2022): La familia de Jake huye al océano para protegerse y luchar junto al clan
+          marino Metkayina.
+
+        </p>
+        <div class="card-footer-decor"></div>
+      </div>
+    </article>
+
+    <article class="card-receta" onclick="seleccionarTarjeta(this)">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/BlkNo-saOc0?si=AFyRCwMXAuRxxTBH&amp;start=1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-content">
+        <h3>Avatar 3 Fuego y Ceniza</h3>
+        <p class="descripcion-pierrot">
+          Avatar: Fuego y Ceniza (2025): Los Sully enfrentan al "Pueblo de la Ceniza", una peligrosa y agresiva tribu
+          Na'vi de fuego.
+        </p>
+        <div class="card-footer-decor"></div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copyright">&copy 2026 Avarakuma creado por Selena Diaz.</p>
+    </div>
+  </footer>
+
+</html>
