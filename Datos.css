@@ -1,4 +1,4 @@
- article{
+ article {
      background-color: #0b132b;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      padding: 2rem;
@@ -34,3 +34,110 @@
      color: #e0f4fc;
      font-size: 1rem;
  }
+
+ details {
+     width: 90%;
+     max-width: 1000px;
+     background-color: #1e1e2f;
+     color: #ffffff;
+     cursor: pointer;
+     margin: 15px auto;
+     border-radius: 6px;
+     overflow: hidden;
+     position: relative;
+ }
+
+ details p {
+     padding: 15px;
+     line-height: 1.5;
+ }
+
+ summary {
+     padding: 15px;
+     background-color: #2a2a40;
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: bold;
+     list-style: none;
+     position: relative;
+     padding-right: 45px;
+ }
+
+ summary::-webkit-details-marker {
+     display: none;
+ }
+
+ summary::before {
+     content: "+";
+     position: absolute;
+     top: 50%;
+     right: 15px;
+     transform: translateY(-50%);
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #ffffff;
+ }
+
+ details[open] summary::after {
+     content: "-";
+     position: absolute;
+     top: 50%;
+     right: 15px;
+     transform: translateY(-50%);
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #ffffff;
+     background-color: #1e1e2f;
+     padding: 0 4px;
+ }
+
+.contenedor {
+    display: flex;             
+    flex-direction: row;       
+    justify-content: center; 
+    align-items: flex-start;  
+    gap: 30px;                 
+    flex-wrap: wrap;           
+    padding: 20px;
+}
+
+
+.Neytiri, .Jake {
+    background: #ffffff;
+    border: 2px solid #b0e0e6;
+    border-radius: 12px;
+    width: 450px;             
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(70, 130, 180, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Neytiri:hover, .Jake:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(70, 130, 180, 0.25);
+}
+
+.Neytiri img, .Jake img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #87ceeb;
+}
+
+.Neytiri h2, .Jake h2 {
+    color: #1e3d59;
+    font-size: 1.5rem;
+    margin: 16px 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4682b4;
+    text-align: center;
+}
+
+.Neytiri p, .Jake p {
+    color: #34495e;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+    white-space: pre-line;
+}
