@@ -166,18 +166,18 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
-
 .card-content h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
-  color: #0e0043;
+  color: #eee9ff;
 }
 
 .descripcion-pierrot {
     font-size: 0.95rem;
-  color: #10003a;
+  color: #ffffff;
   line-height: 1.5;
   margin-bottom: 1rem;
+}
 
 }
 .site-footer {
