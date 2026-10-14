@@ -111,6 +111,7 @@ body {
 article {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
   max-width: 800px;
   margin: 0 auto;
