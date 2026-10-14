@@ -29,6 +29,7 @@ body {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -179,7 +180,7 @@ main {
   margin-bottom: 1rem;
 }
 
-}
+
 .site-footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -262,3 +263,4 @@ main {
   border-left-color: #7dd3fc;
   box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
 }
+
